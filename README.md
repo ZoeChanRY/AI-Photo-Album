@@ -1,2 +1,4 @@
 # ai-photo-search
-a photo album web application that can be searched using natural language through both text and voice. You will learn how to use Lex, OpenSearch, and Rekognition to create an intelligent search layer to query your photos for people, objects, actions, landmarks and more.
+•	Developed an intelligent photo album web application with natural language text and voice search for efficient photo collection.
+
+•	Skillset: Front-end development with HTML, CSS, JavaScript; advanced search with AWS Lex, Rekognition; a robust AWS-powered backend with S3, OpenSearch, Lambda, API Gateway; automated deployment with AWS CodePipeline, CloudFormation.
