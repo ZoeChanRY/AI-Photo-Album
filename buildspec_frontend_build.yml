@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "Creating artifacts directory..."
+      - mkdir -p $CODEBUILD_SRC_DIR/artifacts
+      - echo "Copying frontend files..."
+  build:
+    commands:
+      - cp -r frontend/* $CODEBUILD_SRC_DIR/artifacts/
+      - echo "Files copied to artifacts directory."
+
+artifacts:
+  files:
+    - '**/*'
+    - buildspec_frontend_deploy.yml
+  base-directory: artifacts
